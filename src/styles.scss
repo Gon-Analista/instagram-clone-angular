@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.phone-container {
+    position: relative;
+    width: 250px;
+    height: 500px;
+  }
+  
+.phone-frame {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+.phone-screen {
+    position: absolute;
+    top: 2%;
+    left: 6%;
+    width: 89%;
+    height: 98%;
+    overflow: hidden;
+    z-index: 0;
+}
+
